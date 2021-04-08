@@ -13,6 +13,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using AircraftAPI.Models;
+using AircraftAPI.Repository;
+using AircraftAPI.Services;
 
 namespace AircraftAPI
 {
@@ -31,6 +33,8 @@ namespace AircraftAPI
 
             services.AddDbContext<MyContext>(opt => opt.UseInMemoryDatabase("AircraftRepairDb"));
             services.AddControllers();
+            services.AddScoped<AircraftRepository>();
+            services.AddScoped<AircraftService>();
            
         }
 

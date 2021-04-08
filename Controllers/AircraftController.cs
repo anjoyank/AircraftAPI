@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AircraftAPI.Models;
+using AircraftAPI.Services;
 
 namespace AircraftAPI.Controllers
 {
@@ -14,10 +15,12 @@ namespace AircraftAPI.Controllers
     public class AircraftController : ControllerBase
     {
         private readonly MyContext _context;
+        private readonly AircraftService _aircraftService;
 
-        public AircraftController(MyContext context)
+        public AircraftController(MyContext context, AircraftService aircraftService)
         {
             _context = context;
+            _aircraftService = aircraftService;
         }
 
         // POST: api/AircraftAPI
@@ -25,44 +28,9 @@ namespace AircraftAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<AircraftRepair>> PostAircraftRepair(List<Repair> repairs, int id)
         {
-            var aircraftList = new List<Aircraft>
-            {
-                new Aircraft{Id=1, DailyHours=0.7, CurrentHours=550},
-                new Aircraft{Id=2, DailyHours=1.1, CurrentHours=200}
-            };
-            Aircraft thisAircraft = aircraftList.Find(p => p.Id == id);
             
-            var nextDueList = new List<Repair>();
-            foreach (Repair repair in repairs)
-            {
-                DateTime logDate = DateTime.Parse(repair.LogDate);
-                double? DaysRemainingByHoursInterval;
-                DateTime? IntervalHoursNextDueDate = null;
-                DateTime? IntervalMonthsNextDueDate = null;
-                if (repair.IntervalMonths != null && repair.LogDate != null)
-                {
-                    IntervalMonthsNextDueDate = logDate.AddMonths((int)repair.IntervalMonths);
-                }
-                
-                if (repair.LogHours != null && repair.IntervalHours != null)
-                {
-                    DaysRemainingByHoursInterval = (((repair.LogHours + repair.IntervalHours) - thisAircraft.CurrentHours) / thisAircraft.DailyHours);
-                    IntervalHoursNextDueDate = logDate.AddDays((double)DaysRemainingByHoursInterval);
-                }
-
-                if (IntervalHoursNextDueDate <= IntervalMonthsNextDueDate || IntervalMonthsNextDueDate == null)
-                {
-                    repair.NextDue = IntervalHoursNextDueDate;
-                }
-                
-                else
-                {
-                    repair.NextDue = IntervalMonthsNextDueDate;
-                }
-
-                nextDueList.Add(repair);
-            }
-            var aircraftRepair = new AircraftRepair{Id = id, Repairs = nextDueList};
+            var aircraftRepair = new AircraftRepair();
+            aircraftRepair = _aircraftService.CreateAircraftRepair(repairs, id);
 
             _context.AircraftRepairDbSet.Add(aircraftRepair);
             await _context.SaveChangesAsync();
