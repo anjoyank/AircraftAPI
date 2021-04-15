@@ -5627,11 +5627,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftAPITests\\AircraftAPITests.csproj",
-      "projectName": "AircraftAPITests",
-      "projectPath": "C:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftAPITests\\AircraftAPITests.csproj",
+      "projectUniqueName": "C:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftServiceTests\\AircraftServiceTests.csproj",
+      "projectName": "AircraftServiceTests",
+      "projectPath": "C:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftServiceTests\\AircraftServiceTests.csproj",
       "packagesPath": "C:\\Users\\anjoy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftAPITests\\obj\\",
+      "outputPath": "C:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftServiceTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anjoy\\AppData\\Roaming\\NuGet\\NuGet.Config"

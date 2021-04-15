@@ -14,26 +14,21 @@ namespace AircraftAPI.Controllers
     [ApiController]
     public class AircraftController : ControllerBase
     {
-        private readonly MyContext _context;
         private readonly AircraftService _aircraftService;
 
-        public AircraftController(MyContext context, AircraftService aircraftService)
+        public AircraftController(AircraftService aircraftService)
         {
-            _context = context;
             _aircraftService = aircraftService;
         }
 
         // POST: api/AircraftAPI
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<AircraftRepair>> PostAircraftRepair(List<Repair> repairs, int id)
+        public ActionResult<AircraftRepair> PostAircraftRepair(List<Repair> repairs, int id)
         {
             
             var aircraftRepair = new AircraftRepair();
             aircraftRepair = _aircraftService.CreateAircraftRepair(repairs, id);
-
-            _context.AircraftRepairDbSet.Add(aircraftRepair);
-            await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(PostAircraftRepair), new {id = aircraftRepair.Id}, aircraftRepair);
         }

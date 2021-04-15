@@ -31,7 +31,7 @@ namespace AircraftAPI
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<MyContext>(opt => opt.UseInMemoryDatabase("AircraftRepairDb"));
+            // services.AddDbContext<MyContext>(opt => opt.UseInMemoryDatabase("AircraftRepairDb"));
             services.AddControllers();
             services.AddScoped<AircraftRepository>();
             services.AddScoped<AircraftService>();

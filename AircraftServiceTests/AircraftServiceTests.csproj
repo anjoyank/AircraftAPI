@@ -19,4 +19,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Services\AircraftService.cs" />
+  </ItemGroup>
+  
+
 </Project>

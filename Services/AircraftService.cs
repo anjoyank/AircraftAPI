@@ -15,6 +15,23 @@ namespace AircraftAPI.Services
             _repository = repository;
         }
 
+        public static DateTime findNextMonthDue(DateTime date, int months)
+        {
+            return date.AddMonths(months);
+        }
+
+        public static double findDaysByHours(int logHours, int intervalHours, double currentHours, double dailyHours)
+        {
+            return (((logHours + intervalHours)-currentHours)/dailyHours);
+        }
+
+        public static DateTime findNextHoursDue(DateTime date, double days)
+        {
+            return date.AddDays(days);
+        }
+
+
+
         public AircraftRepair CreateAircraftRepair(List<Repair> repairs, int id)
         {
             var aircraftList = _repository.GetAircraft();
@@ -29,13 +46,13 @@ namespace AircraftAPI.Services
                 DateTime? IntervalMonthsNextDueDate = null;
                 if (repair.IntervalMonths != null && repair.LogDate != null)
                 {
-                    IntervalMonthsNextDueDate = logDate.AddMonths((int)repair.IntervalMonths);
+                    IntervalMonthsNextDueDate = findNextMonthDue(logDate, (int)repair.IntervalMonths);
                 }
                 
                 if (repair.LogHours != null && repair.IntervalHours != null)
                 {
-                    DaysRemainingByHoursInterval = (((repair.LogHours + repair.IntervalHours) - thisAircraft.CurrentHours) / thisAircraft.DailyHours);
-                    IntervalHoursNextDueDate = logDate.AddDays((double)DaysRemainingByHoursInterval);
+                    DaysRemainingByHoursInterval = findDaysByHours((int)repair.LogHours, (int)repair.IntervalHours, thisAircraft.CurrentHours, thisAircraft.DailyHours);
+                    IntervalHoursNextDueDate = findNextHoursDue(logDate, (double)DaysRemainingByHoursInterval);
                 }
 
                 if (IntervalHoursNextDueDate <= IntervalMonthsNextDueDate || IntervalMonthsNextDueDate == null)

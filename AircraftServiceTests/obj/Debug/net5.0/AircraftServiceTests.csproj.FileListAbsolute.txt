@@ -1,0 +1,5 @@
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\AircraftServiceTests\obj\Debug\net5.0\AircraftServiceTests.csprojAssemblyReference.cache
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\AircraftServiceTests\obj\Debug\net5.0\AircraftServiceTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\AircraftServiceTests\obj\Debug\net5.0\AircraftServiceTests.AssemblyInfoInputs.cache
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\AircraftServiceTests\obj\Debug\net5.0\AircraftServiceTests.AssemblyInfo.cs
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\AircraftServiceTests\obj\Debug\net5.0\AircraftServiceTests.csproj.CoreCompileInputs.cache

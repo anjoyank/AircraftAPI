@@ -134,3 +134,9 @@ C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\obj\D
 C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\obj\Debug\net5.0\ref\AircraftAPI.dll
 C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\obj\Debug\net5.0\AircraftAPI.pdb
 C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\obj\Debug\net5.0\AircraftAPI.genruntimeconfig.cache
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\bin\Debug\net5.0\xunit.abstractions.dll
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\bin\Debug\net5.0\xunit.assert.dll
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\bin\Debug\net5.0\xunit.core.dll
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\bin\Debug\net5.0\xunit.execution.dotnet.dll
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\bin\Debug\net5.0\AircraftServiceTests\obj\AircraftAPITests.csproj.nuget.dgspec.json
+C:\Users\anjoy\.NET Development Work\First_NET_API\AircraftAPI\AircraftAPI\bin\Debug\net5.0\AircraftServiceTests\obj\project.assets.json
