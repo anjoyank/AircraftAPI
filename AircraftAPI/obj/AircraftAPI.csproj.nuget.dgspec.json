@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {}
+    "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {
+    "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
+        "projectUniqueName": "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
         "projectName": "AircraftAPI",
-        "projectPath": "c:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
+        "projectPath": "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
         "packagesPath": "C:\\Users\\anjoy\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\anjoy\\.NET Development Work\\First_NET_API\\AircraftAPI\\AircraftAPI\\AircraftAPI\\obj\\",
+        "outputPath": "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anjoy\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[5.0.2, )"
             },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -83,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
