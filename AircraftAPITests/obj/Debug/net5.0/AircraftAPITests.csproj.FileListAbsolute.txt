@@ -649,3 +649,4 @@ c:\Users\anjoy\ALL DEV WORK\ADAM BROADBENT\AircraftAPI\AircraftAPITests\obj\Debu
 c:\Users\anjoy\ALL DEV WORK\ADAM BROADBENT\AircraftAPI\AircraftAPITests\obj\Debug\net5.0\ref\AircraftAPITests.dll
 c:\Users\anjoy\ALL DEV WORK\ADAM BROADBENT\AircraftAPI\AircraftAPITests\obj\Debug\net5.0\AircraftAPITests.pdb
 c:\Users\anjoy\ALL DEV WORK\ADAM BROADBENT\AircraftAPI\AircraftAPITests\obj\Debug\net5.0\AircraftAPITests.genruntimeconfig.cache
+c:\Users\anjoy\ALL DEV WORK\ADAM BROADBENT\AircraftAPI\AircraftAPITests\bin\Debug\net5.0\RabbitMQ.Client.dll

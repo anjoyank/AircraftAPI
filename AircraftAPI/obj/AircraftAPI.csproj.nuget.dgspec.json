@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {}
+    "c:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {
+    "c:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
+        "projectUniqueName": "c:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
         "projectName": "AircraftAPI",
-        "projectPath": "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
+        "projectPath": "c:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
         "packagesPath": "C:\\Users\\anjoy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\obj\\",
+        "outputPath": "c:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anjoy\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using AircraftAPI.Models;
 using AircraftAPI.Repository;
 using AircraftAPI.Services;
+// using RabbitMQ;
 
 namespace AircraftAPI
 {
@@ -35,6 +36,7 @@ namespace AircraftAPI
             services.AddControllers();
             services.AddScoped<AircraftRepository>();
             services.AddScoped<AircraftService>();
+            // services.Configure<RabbitMqConfiguration>(Configuration.GetSection("RabbitMq"));
            
         }
 
