@@ -1,10 +1,13 @@
-import RepairCard from '/components/RepairCard';
+import Header from './components/Layout/Header';
+import Card from './components/UI/Card';
+import { Fragment } from 'react';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <RepairCard />
-    </div>
+    <Fragment>
+      <Header />
+      <Card />
+    </Fragment>
   );
 }
 
