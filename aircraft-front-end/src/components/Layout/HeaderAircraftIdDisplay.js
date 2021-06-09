@@ -7,8 +7,8 @@ const HeaderAircraftIdDisplay = props => {
           <span className={classes.icon}>
             <AircraftIdIcon />
           </span>
-          <span>Aircraft Id</span>
-          <span className={classes.badge}>3</span>
+          <span>Show Entered Repairs For:</span>
+          <span className={classes.badge}>AIRCRAFTID #</span>
         </button>
       );
 };
