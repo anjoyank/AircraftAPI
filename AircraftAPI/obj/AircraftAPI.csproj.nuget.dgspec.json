@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {}
+    "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {
+    "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
+        "projectUniqueName": "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
         "projectName": "AircraftAPI",
-        "projectPath": "c:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
+        "projectPath": "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\AircraftAPI.csproj",
         "packagesPath": "C:\\Users\\anjoy\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\obj\\",
+        "outputPath": "C:\\Users\\anjoy\\ALL DEV WORK\\ADAM BROADBENT\\AircraftAPI\\AircraftAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anjoy\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

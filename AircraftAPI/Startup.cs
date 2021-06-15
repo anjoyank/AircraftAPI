@@ -37,6 +37,12 @@ namespace AircraftAPI
             services.AddScoped<AircraftRepository>();
             services.AddScoped<AircraftService>();
             // services.Configure<RabbitMqConfiguration>(Configuration.GetSection("RabbitMq"));
+
+            services.AddCors(options => {
+                options.AddDefaultPolicy(builder => {
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                });
+            });
            
         }
 
@@ -52,6 +58,8 @@ namespace AircraftAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
